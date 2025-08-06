@@ -8,8 +8,11 @@ class DataPoint:
     def distance_to(self, other) -> float:
         return math.sqrt((self.x - other.x) ** 2 + (self.y - other.y) ** 2)
 
-p1 = DataPoint(1, 1)
-p2 = DataPoint(3, 3)
-
-print(p1.distance_to(p2))
+    def __str__(self):
+        return f'该点的坐标是({self.x}, {self.y})'
+#
+# p1 = DataPoint(1, 1)
+# p2 = DataPoint(3, 3)
+#
+# print(p1.distance_to(p2))
 
